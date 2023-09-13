@@ -1,0 +1,172 @@
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#eceef3, #6bbcea);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(88, 89, 97, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  color:#fff
+}
+
+.login-box h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #efe6e6;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+  align-items: center;
+  text-align: left;
+}
+.user-box{
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  margin-right: 2%;
+  
+}
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #0b0607;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #f2f3f0;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #0a0704;
+  font-size: 12px;
+}
+/* CSS for the total amount field */
+.login-box .total-box {
+  width: 100%; /* Đảm bảo rằng nó chiếm 100% chiều rộng của form */
+}
+
+.login-box .total-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #e12e4f;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #f2f3f0;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .total-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .total-box input:focus ~ label,
+.login-box .total-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #0a0704;
+  font-size: 12px;
+}
+
+button {
+  font-size: 15px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background: rgb(113, 94, 81);
+  background: linear-gradient(90deg, rgb(158, 185, 219) 0%, rgba(121, 144, 156, 0.72) 100%);
+  color: #231e1e;
+  font-weight: 900;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  box-shadow: 0 0 10px #3f3232;
+  transition: 0.2s;
+  left: 110px;
+}
+
+.label {
+  position: relative;
+  top: -1px;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+  transition-duration: 400ms;
+  background: #ece5e5;
+  border-radius: 9999px;
+  width: 11em;
+  height: 11em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover .transition {
+  width: 0;
+  height: 0;
+}
+
+button:hover {
+  transition: 0.2s;
+  color: #f3eaea;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+.user-box1:after {
+  
+  display: table;
+  clear: both;
+}
+.user-box1 > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.user-box1 > div:last-child {
+  margin: 0;
+}
+
+
+
